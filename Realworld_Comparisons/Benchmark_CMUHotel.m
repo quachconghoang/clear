@@ -7,13 +7,13 @@
 %% Set path
 
 addpath('Helpers');
-addpath(genpath('..\CLEAR_Matlab'));
-addpath(genpath('..\Synthetic_Comparisons\Algorithms'));
-addpath(genpath('..\Synthetic_Comparisons\Helpers'));
-addpath(genpath('VLFeat\toolbox\mex'));
+addpath(genpath('../CLEAR_Matlab'));
+addpath(genpath('../Synthetic_Comparisons/Algorithms'));
+addpath(genpath('../Synthetic_Comparisons/Helpers'));
+addpath(genpath('VLFeat/toolbox/mex'));
 
 % Path to CMU Hotel dataset
-dataRoot = [pwd, '\Datasets\CMU Hotel']; 
+dataRoot = [pwd, '/Datasets/CMU Hotel']; 
 
 % addpath('F:\Hubic\Code\Matlab\MIT\03.5 - CLEAR - paper results\VLFeat\toolbox\mex\mexw64');
 

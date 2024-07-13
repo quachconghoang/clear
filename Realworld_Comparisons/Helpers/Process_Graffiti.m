@@ -48,7 +48,7 @@ thresh = 1e-5; % Threshold to reject outlier matches
 % benchName = 'UBC';
 % benchName = 'Wall';
  
-dataPath = [dataRoot '\' benchName];
+dataPath = [dataRoot '/' benchName];
 
 
 %% Read images and find SIFT features/descriptors
@@ -65,7 +65,7 @@ imgDescriptors = cell(1,numAgt);
 
 for i = 1 : numAgt
     imgNames{i} = files(i+7).name; 
-    imgRGB{i} = imread([dataPath '\' imgNames{i}]);
+    imgRGB{i} = imread([dataPath '/' imgNames{i}]);
     imgGray{i} = rgb2gray(imgRGB{i});
 
     % Extract SIFT feature points and descriptors
@@ -95,7 +95,7 @@ Hom = cell(6,6);
 
 for i = 1 : 5
     homNames{i} = files(i+2).name; 
-    fileID = fopen([dataPath '\' homNames{i}]);
+    fileID = fopen([dataPath '/' homNames{i}]);
     H1i{i} = fscanf(fileID, '%e', [3,3])';        
     fclose(fileID);
     

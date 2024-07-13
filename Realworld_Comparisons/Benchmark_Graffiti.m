@@ -7,13 +7,13 @@
 %% Set path
 
 addpath('Helpers');
-addpath(genpath('..\CLEAR_Matlab'));
-addpath(genpath('..\Synthetic_Comparisons\Algorithms'));
-addpath(genpath('..\Synthetic_Comparisons\Helpers'));
-addpath(genpath('VLFeat\toolbox\mex'));
+addpath(genpath('../CLEAR_Matlab'));
+addpath(genpath('../Synthetic_Comparisons/Algorithms'));
+addpath(genpath('../Synthetic_Comparisons/Helpers'));
+addpath(genpath('VLFeat/toolbox/mex'));
 
 % Path to Graffiti dataset
-dataRoot = [pwd, '\Datasets\Graffiti'];
+dataRoot = [pwd, '/Datasets/Graffiti'];
 
 
 %% Process dataset to extract groundtruth and image feature point data

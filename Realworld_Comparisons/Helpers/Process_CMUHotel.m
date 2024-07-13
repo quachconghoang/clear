@@ -35,9 +35,9 @@ end
 % benchName = 'books';
 % benchName = 'bldg';
 
-dataPath = [dataRoot '\' benchName]; % Path to the dataset files
+dataPath = [dataRoot '/' benchName]; % Path to the dataset files
 
-load(strcat(dataPath, '\', 'groundT.mat')); % Load ground truth data
+load(strcat(dataPath, '/', 'groundT.mat')); % Load ground truth data
 
 
 %% Specific adjustments for each benchmark 
@@ -76,7 +76,7 @@ imgDescriptors = cell(1,numAgt);
 
 for i = 1 : numAgt    
     % Load image
-    imgRGB{i} = imread([dataPath '\' imgNames{i}]);
+    imgRGB{i} = imread([dataPath '/' imgNames{i}]);
     if  strcmp(benchName, 'hotel')
         imgGray{i} = single(imgRGB{i});
     else
